@@ -1,5 +1,9 @@
 == Welcome to Rails
 
+def something
+  is this automatic?
+end
+
 Rails is a web-application framework that includes everything needed to create
 database-backed web applications according to the Model-View-Control pattern.
 
@@ -56,7 +60,7 @@ shown in the browser on requests from 127.0.0.1.
 
 You can also log your own messages directly into the log file from your code
 using the Ruby logger class from inside your controllers. Example:
-`
+
   class WeblogController < ActionController::Base
     def destroy
       @weblog = Weblog.find(params[:id])
@@ -64,7 +68,7 @@ using the Ruby logger class from inside your controllers. Example:
       logger.info("#{Time.now} Destroyed Weblog ID ##{@weblog.id}!")
     end
   end
-`
+
 The result will be a message in your log file along the lines of:
 
   Mon Oct 08 14:22:29 +1000 2007 Destroyed Weblog ID #1!
